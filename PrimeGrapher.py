@@ -4,6 +4,7 @@ largestN = 2
 
 
 def sqrt(n):
+    '''Returns the integer square root of a number.'''
     return int(n**.5)
 
 
@@ -20,6 +21,7 @@ def isPrime(n):
 
 
 def populatePrimes(num):
+    '''calculates new prime numbers and adds them to the memoized list.'''
     global primes
     global primesUnderN
     global largestN
@@ -33,6 +35,7 @@ def populatePrimes(num):
 
 
 def plotPrimes(num):
+    '''plots prime numbers from 0 to num on a graph and returns a bytestream'''
     import matplotlib.pyplot as plt
     from io import BytesIO
     global primes
